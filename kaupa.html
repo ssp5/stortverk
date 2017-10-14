@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="grid" lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hópverkefni 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato%7CMerriweather" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleguide.css"> við erum ekki með þessa skrá-->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <h1>Fooþjónusta</h1>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="about.html">Um</a>
+          </li>
+          <li>
+            <a href="kaupa.html">Kaupa</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="content"> <!-- ath kannski er betra að klasinn heiti header__content-->
+        <h1>Í fyrsta skipti á Íslandi</h1>
+        <h2>Fooþjónustan</h2>
+        <button class="button">Kaupa</button>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <fieldset name="Persónuupplýsingar">
+          <legend>Persónuupplýsingar</legend>
+          <div>
+            <label for="nafn">Nafn:</label>
+            <!-- ath hér þarf að koma line break. skoða sýnislausnir -->
+            <input id="nafn" nafn="nafn" required="" type="text">
+          </div>
+          <div>
+            <label for="kennitala">Kennitala:</label>
+            <input id="kennitala" type="text">
+          </div>
+          <div>
+            <p>Kyn:</p>
+            <label>
+              <input name="kyn" value="kona" type="radio">Kona</label>
+              <input name="kyn" value="karl" type="radio">Karl</label>
+              <input name="kyn" value="annad" type="radio">Annað</label>
+            </div>
+            
