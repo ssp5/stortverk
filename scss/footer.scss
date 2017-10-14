@@ -4,6 +4,9 @@
   padding:2em;
 
   .footer__content {
+
+    display: flex;
+    flex-wrap: nowrap;
     margin: auto;
     // padding: 5em;
   }

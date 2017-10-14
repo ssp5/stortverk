@@ -1,7 +1,17 @@
+// mixin sem reiknar nákvæmar prósentur útfrá dálkum
+@mixin columns($col: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  width: ($col / 12 * 100) * 1%;
+}
+
 .button {
   display: inline-block;
 
-  margin: 0;
+  // ath þetta stuff virkar ekki...........:(
+  @include columns(12);
+  align-self: center;
+
+  margin-top: 4em;
   padding: 10px 5px;
   border: 1px solid #666;
   border-radius: 4px;

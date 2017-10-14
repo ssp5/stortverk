@@ -67,8 +67,17 @@ main {
   padding: 2em;
   width: 100%;
   min-height: 100vh;
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
   background-size: cover; }
+  .header1 {
+    background: transparent url(bg.jpg) no-repeat fixed 50% 50%; }
+  .header2 {
+    background: transparent url(bg-subpage.jpg) no-repeat fixed 50% 50%;
+    color: white;
+    padding-left: 0em; }
+  .header3 {
+    background: transparent url(bg-subpage.jpg) no-repeat fixed 50% 50%;
+    color: white;
+    padding-left: 0em; }
   .header .content {
     margin: auto;
     align-items: center; }
@@ -97,7 +106,9 @@ main {
 
 .button {
   display: inline-block;
-  margin: 0;
+  width: 100%;
+  align-self: center;
+  margin-top: 4em;
   padding: 10px 5px;
   border: 1px solid #666;
   border-radius: 4px;
@@ -194,7 +205,7 @@ main {
 nav {
   color: white;
   background-color: black;
-  height: 100px; }
+  height: auto; }
   nav .right {
     float: right; }
 
@@ -202,6 +213,20 @@ nav {
   margin: auto;
   padding: 2em; }
   .footer .footer__content {
+    display: flex;
+    flex-wrap: nowrap;
     margin: auto; }
   .footer .footer__content2 {
     border-top: 2px solid #999; }
+
+form {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5em; }
+  form fieldset {
+    width: 50%; }
+  form legend {
+    border: white; }
+  form div {
+    margin: 2em 3em; }
