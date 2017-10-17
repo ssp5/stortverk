@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.heading {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background: transparent url("bg-subpage.jpg") no-repeat 50% 50%;
+  opacity: 0.8;
+  margin-bottom: 2em;
+  padding-left: 1.5em;
+  background-size: cover;
+  width: 100%;
+  height: 25em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+p, blockquote {
+  font-family: 'Lato', sans-serif;
+}
+
+.top {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 0.4em 1em;
+  justify-content: space-between;
+  color: white;
+}
+
+.top__buttons > button {
+  padding: 0.4em;
+}
+.button__1 {
+  background: transparent;
+  border: none;
+}
+
+.button__2 {
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.button--2:hover {
+  background-color: #4d4d4d;
+}
+
+
+h1 {
+  font-size: 4em;
+  color: white;
+}
+
+blockquote {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-style: italic;
+  float: right;
+}
+
+.block {
+  padding: 2em 2em;
+}
+footer {
+  margin-top: 1em;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.footer__1 {
+  display: flex;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer {
+  margin: auto;
+  padding: 2em; }
+.footer__content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto; }
+.footer__content2 {
+    border-top: 2px solid #999; }
+
+.endir {
+      border-top: solid rgb(128,128,128) 1px;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+@media (max-width: 400px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row > .col-5 {
+    width: 100%;
+  }
+  .row > .col-7 {
+    width: 100%;
+  }
+  h1 {
+    word-wrap: break-word;
+  }
+  .meginmal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .footer__1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+
+  .row > .col-5 {
+    display: inline;
+  }
+  .row > .col-7 {
+    float: right;
+    height: 100%;
+  }
+  .meginmal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .footer__1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
