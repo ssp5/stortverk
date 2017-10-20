@@ -7,31 +7,26 @@
 .button {
   display: inline-block;
 
-  // ath þetta stuff virkar ekki...........:(
   @include columns(12);
   align-self: center;
 
-  margin-top: 4em;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
   width: 100%;
   max-width: 256px;
+  padding: 10px 5px;
+  margin-top: 4em;
 
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  color: #eee;
-  background-color: #666;
-
   font-family: Lato, helvetica, arial, sans-serif;
   font-size: 1rem;
-
-  text-decoration: none;
+  color: #eee;
   text-align: center;
-
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px;
 
   &:hover {
     color: #eee;
@@ -51,8 +46,8 @@
 
   &--disabled,
   &--disabled:hover {
-    border-color: #eee;
     color: #999;
     background-color: #eee;
+    border-color: #eee;
   }
 }

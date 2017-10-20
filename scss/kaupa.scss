@@ -1,0 +1,29 @@
+.row__kaupa {
+  .cardlist {
+    padding: 5em;
+  }
+
+  .texti {
+    padding: 5px;
+    font-size: 12px;
+
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+  }
+
+  @media (max-width: 400px) {
+    .cardlist {
+      padding-left: 1px;
+      font-size: 20px;
+    }
+
+    .header {
+      padding: none;
+      margin: none;
+    }
+  }
+}

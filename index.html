@@ -1,62 +1,78 @@
 <!doctype html>
-<html class="grid" lang="is">
+<html lang="is">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hópverkefni 1</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato%7CMerriweather" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styleguide.css"> við erum ekki með þessa skrá-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRoboto+Slab:400,700" rel="stylesheet">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
+
     <nav>
-      <h1>Fooþjónusta</h1>
-      <div class="right">
-        <ul>
-          <li>
-            <a href="about.html">Um</a>
-          </li>
-          <li>
-            <a href="kaupa.html">Kaupa</a>
-          </li>
-        </ul>
+      <div class="rightnav">
+        <a class="navtext" href="index.html">Fooþjónustan</a>
+      </div>
+      <div class="leftnav">
+        <button class="button__1" onclick="location.href='about.html'">Um</button>
+        <button class="button__2" onclick="location.href='kaupa.html'">Kaupa</button>
       </div>
     </nav>
 
     <header class="header header1">
-      <div class="content"> <!-- ath kannski er betra að klasinn heiti header__content-->
-        <h1>Í fyrsta skipti á Íslandi</h1>
-        <h2>Fooþjónustan</h2>
-        <button class="button">Kaupa</button>
+      <div class="header__content">
+        <h2>Í fyrsta skipti á Íslandi</h2>
+        <h1>Fooþjónustan</h1>
+        <button class="button" onclick="location.href='kaupa.html'">Kaupa</button>
       </div>
     </header>
 
     <main>
       <div class="grid">
-        <div class="row">
-          <ul class="col col-6 col-sm-12">
-            <li>Ódýr og góð þjónusta. Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.
-            </li>
-            <li>
-              <p>Þægilegt í amstri dagsins</p>
-              <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
-            </li>
-            <li>
-              <p>Nauðsynlegt á hvert heimili</p>
-              <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
-            </li>
-          </ul>
+        <div class="row row__check">
+          <div class="col col-6 col-sm-12">
+
+            <div class="punktar">
+              <div class="check">
+                <img class="checkmynd" src="check.png" alt="">
+              </div>
+              <div class="checktexti">
+                <h2>Ódýr og góð þjónusta. </h2>
+                <p>Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
+              </div>
+            </div>
+
+            <div class="punktar">
+              <div class="check">
+                <img class="checkmynd" src="check.png" alt="">
+              </div>
+              <div class="checktexti">
+                <h2>Þægilegt í amstri dagsins</h2>
+                <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
+              </div>
+            </div>
+
+            <div class="punktar">
+              <div class="check">
+                <img class="checkmynd" src="check.png" alt="">
+              </div>
+              <div class="checktexti">
+                <h2>Nauðsynlegt á hvert heimili</h2>
+                <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
+              </div>
+            </div>
+          </div>
 
           <div class="col col-6 col-sm-12">
-            <img src="image.jpg" alt="">
+            <img class="img__stor" src="image.jpg" alt="">
           </div>
 
         </div>
 
 
-
-        <div class="cardlist">
+        <div class="cardlist index">
           <div class="cardlist__row">
             <div class="cardlist__col">
               <div class="card">
@@ -64,67 +80,75 @@
                   <img class="card__img" src="profile1.jpg" alt="">
                 </div>
                 <div class="card__content">
-                  <!-- ath þetta getur verið blockquote í staðinn fyrir h3 heading -->
-                  <h3 class="card__heading">„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</h3>
-                  <p class="card__text">Anna Jóns</p>
-                  <p class="card__text">Áskrifandi í þrjá mánuði</p>
+                  <div class="card__quote">
+                    <h2 class="quote">„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</h2>
+                  </div>
+                  <div class="card__nafn">
+                    <!-- ath nafn gæti ruglast við nafn í form -->
+                    <h3 class="nafn">Anna Jóns</h3>
+                    <p class="askrift">Áskrifandi í þrjá mánuði</p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="cardlist__col">
               <div class="card">
                 <div class="card__image">
                   <img class="card__img" src="profile2.jpg" alt="">
                 </div>
                 <div class="card__content">
-                  <!-- ath þetta getur verið blockquote í staðinn fyrir h3 heading -->
-                  <h3 class="card__heading">„Vá, þetta breytir öllu!“</h3>
-                  <p class="card__text">Siggi Páls</p>
-                  <p class="card__text">Áskrifandi í tvo daga</p>
+                  <div class="card__quote">
+                    <h2 class="quote">„Vá, þetta breytir öllu!“</h2>
+                  </div>
+                  <div class="card__nafn">
+                    <h3 class="nafn">Siggi Páls</h3>
+                    <p class="askrift">Áskrifandi í tvo daga</p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="cardlist__col">
               <div class="card">
                 <div class="card__image">
                   <img class="card__img" src="profile3.jpg" alt="">
                 </div>
                 <div class="card__content">
-                  <!-- ath þetta getur verið blockquote í staðinn fyrir h3 heading -->
-                  <h3 class="card__heading">„A+++, mun aldrei hætta í áskrift“</h3>
-                  <p class="card__text">Jón Guðrúnarson</p>
-                  <p class="card__text">Áskrifandi í ár</p>
+                  <div class="card__quote">
+                    <h2 class="quote">„A+++, mun aldrei hætta í áskrift“</h2>
+                  </div>
+                  <div class="card__nafn">
+                    <!-- ath nafn gæti ruglast við nafn í form -->
+                    <h3 class="nafn">Jón Guðrúnarson</h3>
+                    <p class="askrift">Áskrifandi í ár</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ath þurfum að setja þetta div í eitthvað class -->
-        <div class="blabla">
-          <p>Eftir hverju ert þú að bíða?</p>
-          <button class="button">Kaupa</button>
+        <div class="row lok">
+          <h2 class="lokatexti">Eftir hverju ert þú að bíða?</h2>
+          <button class="button" onclick="location.href='kaupa.html'">Kaupa</button>
         </div>
 
       </div>
 
-      <footer class="footer">
-        <div class="footer__content">
-          <p>Fooþjónustan</p>
-          <p>123-4567</p>
+    </main>
+
+      <footer>
+        <div class="row footer__1">
+          <div class="col col-6">
+            <p>Fooþjónustan<br>123-4567</p>
+          </div>
+          <div class="col col-6">
+            <p>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
+          </div>
         </div>
-        <div class="footer__content">
-          <p>Opið 12-13 alla daga</p>
-          <p>Bargata 1</p>
-          <p>900 Foobar</p>
-        </div>
-        <!-- Við getum skýrt þetta eitthvað annað -->
-        <div class="footer__content2">
-          <p>© Fooþjónustan 2017</p>
-        </div>
+        <p class="bottom">© Fooþjónustan 2017</p>
       </footer>
 
-
-    </main>
   </body>
 </html>

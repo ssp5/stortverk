@@ -1,148 +1,153 @@
 <!doctype html>
-<html class="grid" lang="is">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hópverkefni 1</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato%7CMerriweather" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styleguide.css"> við erum ekki með þessa skrá-->
-    <link rel="stylesheet" href="grid.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kaupa</title>
+  <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
-  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRoboto+Slab:400,700" rel="stylesheet">
+</head>
   <body>
     <nav>
-      <h1>Fooþjónusta</h1>
-      <div class="right">
-        <ul>
-          <li>
-            <a href="about.html">Um</a>
-          </li>
-          <li>
-            <a href="kaupa.html">Kaupa</a>
-          </li>
-        </ul>
+      <div class="rightnav">
+        <a class="navtext" href="index.html">Fooþjónustan</a>
+      </div>
+      <div class="leftnav">
+        <button class="button__1" onclick="location.href='about.html'">Um</button>
+        <button class="button__2" onclick="location.href='kaupa.html'">Kaupa</button>
       </div>
     </nav>
 
     <header class="header header2">
-      <div class="content"> <!-- ath kannski er betra að klasinn heiti header__content-->
-        <h2>Kaupa</h2>
+      <div class="header__content">
+        <h1>Kaupa</h1>
       </div>
     </header>
 
-    <main>
-      <form class="form">
-        <fieldset class="fieldset" name="Persónuupplýsingar">
-          <legend>Persónuupplýsingar</legend>
-          <div>
-            <label for="nafn">Nafn:</label>
-            <!-- ath hér þarf að koma line break. skoða sýnislausnir -->
-            <input id="nafn" required="" type="text">
+      <main>
+
+      <div class="row row__kaupa">
+        <div class="cardlist col-6">
+          <h3 class="heading heading__3"> Persónuupplýsingar </h3>
+          <div class="texti">
+            <div>
+              <label for="nafn">Nafn:</label>
+            </div>
+              <input id="nafn" type="text" required>
           </div>
-          <div>
-            <label for="kennitala">Kennitala:</label>
+          <div class="texti">
+            <div>
+              <label for="kennitala">Kennitala:</label>
+            </div>
             <input id="kennitala" placeholder="123456-7890" type="text">
           </div>
-          <div>
+          <div class="texti">
             <p>Kyn:</p>
-            <label>
-              <input name="kyn" value="kona" type="radio">Kona
-            </label>
-            <label>
-              <input name="kyn" value="karl" type="radio">Karl
-            </label>
-            <label>
-              <input name="kyn" value="annad" type="radio">Annað
-            </label>
-            </div>
+              <div class= "texti">
+                <label><input name="þjónusta" type="radio">Kona</label>
+              </div>
+              <div class ="texti">
+                <label><input name="þjónusta" type="radio">Karl</label>
+              </div>
+              <div class ="texti">
+                <label><input name="þjónusta" type="radio">Annað</label>
+              </div>
+          </div>
+
+          <div class="texti">
             <div>
               <label for="simi">Sími:</label>
-              <input id="simi" placeholder="+354 812 3456" type="text">
             </div>
+            <input id="simi" placeholder="+354 812 3456" type="text">
+          </div>
+          <div class="texti">
             <div>
               <label for="heimilisfang">Heimilisfang:</label>
-              <input id="heimilisfang" type="text">
             </div>
-            <div>
-              <label>
-                <input name="postlisti" checked="" type="checkbox">
-                Skrá mig á póstlista
-              </label>
+            <input id="heimilisfang" type="text">
+          </div>
+            <div class="checkbox"><label>
+              <input name="postlisti" checked="" type="checkbox">
+              Skrá mig á póstlista</label>
             </div>
-          </fieldset>
-        <!-- </form> -->
+        </div>
 
-        <!-- Seinna form -->
-        <!-- <form> -->
-          <fieldset name="Greiðsluupplýsingar">
-            <legend>Greiðsluupplýsingar</legend>
-            <div>
-              <label for="greidslumati">Greiða með:</label>
-              <select id="greidslumati" name="greidslumati">
-                <option>Kreditkort</option>
-                <option>Debetkort</option>
-                <option>Casssh</option>
-              </select>
+
+        <div class="cardlist col-6">
+          <h3 class="heading heading__3"> Greiðsluupplýsingar </h3>
+            <div class="texti">
+                <div>
+                  <label for="greidslumati">Greiða með:</label>
+                </div>
+                <select id="greidslumati" name="greidslumati">
+                  <option>Kreditkorti</option>
+                  <option>Debetkorti</option>
+                  <option>Reiðufé</option>
+                </select>
             </div>
+          <div class="texti">
             <div>
               <label for="kortanafn">Nafn á korti:</label>
-              <input id="kortanafn" type="text">
             </div>
+            <input id="kortanafn" type="text">
+          </div>
+          <div class="texti">
             <div>
               <label for="kortanumer">Kortanúmer:</label>
-              <input id="kortanumer" placeholder="5999-9999-9999-9999" type="text">
             </div>
-            <div>
-              <p>Gildistími:</p>
-              <label for="manudur">Mán</label>
-              <select id="manudur" name="manudur">
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-              </select>
-              <label for="ar">Ár</label>
-              <select id="ar" name="ar">
-                <option>2017</option>
-                <option>2018</option>
-                <option>2019</option>
-                <option>2020</option>
-                <option>2021</option>
-                <option>2022</option>
-              </select>
-            </div>
-          </fieldset>
-          <button class="button">Panta</button>
-          </form>
+            <input id="kortanumer" placeholder="5999-9999-9999-9999" type="text">
+          </div>
+          <div class="texti">
+            <p>Gildistími:</p>
+              <div>
+                <label for="manudur">Mán</label>
+                <select id="manudur" name="manudur">
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <label for="ar">Ár</label>
+                <select id="ar" name="ar">
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row panta">
+        <button class="button" onclick="location.href='kaupa.html'">Panta</button>
+      </div>
+  </main>
+
+    <footer>
+      <div class="row footer__1">
+        <div class="col col-6">
+          <p>Fooþjónustan<br>123-4567</p>
+        </div>
+        <div class="col col-6">
+          <p>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
+        </div>
+      </div>
+      <p class="bottom">© Fooþjónustan 2017</p>
+    </footer>
 
 
-          <footer class="footer">
-            <div class="footer__content">
-              <p>Fooþjónustan</p>
-              <p>123-4567</p>
-            </div>
-            <div class="footer__content">
-              <p>Opið 12-13 alla daga</p>
-              <p>Bargata 1</p>
-              <p>900 Foobar</p>
-            </div>
-            <!-- Við getum skýrt þetta eitthvað annað -->
-            <div class="footer__content2">
-              <p>© Fooþjónustan 2017</p>
-            </div>
-          </footer>
+</body>
 
-
-
-
-        </main>
-      </body>
-      </html>
+</html>

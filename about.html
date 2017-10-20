@@ -1,36 +1,39 @@
 <!doctype html>
-<html class="grid" lang="is">
+<html lang="is">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hópverkefni 1</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato%7CMerriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRoboto+Slab:400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="styleguide.css"> við erum ekki með þessa skrá-->
     <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="about.css">
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
 
+    <nav>
+      <div class="rightnav">
+        <a class="navtext" href="index.html">Fooþjónustan</a>
+      </div>
+      <div class="leftnav">
+        <button class="button__1" onclick="location.href='about.html'">Um</button>
+        <button class="button__2" onclick="location.href='kaupa.html'">Kaupa</button>
+      </div>
+    </nav>
 
-
-        <div class="top">
-
-          <h3 class="heading top__heading">Fooþjónustan</h3>
-
-          <div class="top__buttons">
-            <button class="button__1"><a href="about.html">Um</a></button>
-            <button class="button__2"><a href="kaupa.html">Kaupa</a></button>
-          </div>
-        </div>
-        <header>
-          <h1>Um Fooþjónustuna</h1>
-        </header>
+    <header class="header header2">
+      <div class="header__content">
+        <h1>Um Fooþjónustuna</h1>
+      </div>
+    </header>
 
 
     <main>
 
       <div class="meginmal">
-        <h3 class="heading heading__three">Hvað er Fooþjónustan?</h3>
+        <h2 class="heading heading__three">Hvað er Fooþjónustan?</h2>
         <br>
         <p>Í hinum ódauðlegu orðum stofnanda okkar:</p>
         <br>
@@ -53,13 +56,13 @@
       <footer>
         <div class="row footer__1">
           <div class="col col-6">
-            <p class=>Fooþjónustan<br>123-4567</p>
+            <p>Fooþjónustan<br>123-4567</p>
           </div>
           <div class="col col-6">
-            <p class=>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
+            <p>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
           </div>
         </div>
-        <p class="endir">© Fooþjónustan 2017</p>
+        <p class="bottom">© Fooþjónustan 2017</p>
       </footer>
 
 

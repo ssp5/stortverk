@@ -1,17 +1,20 @@
-.footer {
+footer {/* stylelint-disable-line */
+  width: 100%;
+  color: rgba(255, 255, 255);
+  background-color: #4d4d4d;
+}
 
-  margin:auto;
-  padding:2em;
+.footer__1 {
+  display: flex;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
 
-  .footer__content {
-
-    display: flex;
-    flex-wrap: nowrap;
-    margin: auto;
-    // padding: 5em;
-  }
-
-  .footer__content2 {
-    border-top: 2px solid #999;
-  }
+.bottom {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  border-top: solid rgb(128, 128, 128) 1px;
 }

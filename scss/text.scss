@@ -3,3 +3,48 @@
     margin-bottom: 20px;
   }
 }
+
+.punktar {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+
+  .check {
+    width: 10%;
+  }
+
+  .checktexti {
+    margin: 0 20px 20px;
+  }
+
+  .checkmynd {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+}
+
+.lok {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  flex-direction: column;
+  align-items: center;
+
+  button { /* stylelint-disable-line */
+    width: 30%;
+    font-size: 1em;
+  }
+}
+
+.panta {
+  display: flex;
+  padding-bottom: 150px;
+  flex-direction: column;
+  align-items: center;
+
+  button { /* stylelint-disable-line */
+    width: 30%;
+    font-size: 1em;
+  }
+}

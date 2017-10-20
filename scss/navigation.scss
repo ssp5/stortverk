@@ -1,17 +1,40 @@
-nav {
+nav { /* stylelint-disable-line */
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 0.4em 1em;
+  color: rgba(255, 255, 255);
+  background-color: rgba(1, 1, 1, 0.8);
+  justify-content: space-between;
+}
 
-  color: white;
-  // ath nav á að vera smá transparent
-  background-color: black;
+.rightnav {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5em;
+}
 
-  height: auto;
+.leftnav > button {/* stylelint-disable-line */
+  padding: 0.9em;
+}
 
-  .right {
-    float: right;
-  }
+.button__1 {
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+  background: transparent;
+}
 
-  // ul {
-  //   display: flex;
-  // }
+.button__2 {
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+  background-color: rgba(192, 192, 192);
+  border-radius: 5px;
+}
 
+a {/* stylelint-disable-line */
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+
+.button__2:hover {
+  background-color: #4d4d4d;
 }
